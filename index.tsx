@@ -4,9 +4,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import createRequest from '../../client/private/helpers/createRequest';
-import EnhancedRegExp from '../../helpers/enhancements/EnhancedRegExp';
-import type { TransformedEnhancedAccount } from '../../server/enhancements/EnhancedAccount';
+import createRequest from '../client/private/helpers/createRequest';
+import EnhancedRegExp from '../helpers/enhancements/EnhancedRegExp';
+import type { TransformedEnhancedAccount } from '../server/enhancements/EnhancedAccount';
 import './index.css';
 import TicTacToe from './TicTacToe';
 

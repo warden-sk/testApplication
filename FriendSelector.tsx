@@ -3,9 +3,9 @@
  */
 
 import React from 'react';
-import createRequest from '../../client/private/helpers/createRequest';
-import messages from '../../helpers/messages';
-import type { TransformedEnhancedAccount } from '../../server/enhancements/EnhancedAccount';
+import createRequest from '../client/private/helpers/createRequest';
+import messages from '../helpers/messages';
+import type { TransformedEnhancedAccount } from '../server/enhancements/EnhancedAccount';
 
 interface P extends EnhancedJSXElement<'select'> {
   account: TransformedEnhancedAccount;

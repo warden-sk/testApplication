@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import type { TransformedEnhancedAccount } from '../../server/enhancements/EnhancedAccount';
+import type { TransformedEnhancedAccount } from '../server/enhancements/EnhancedAccount';
 import FriendSelector from './FriendSelector';
 import selectWinnerFromBoard from './selectWinnerFromBoard';
 import type { EnhancedSetState } from './useState';
