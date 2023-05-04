@@ -16,11 +16,12 @@ function Client() {
   const [applicationVersionId, updateApplicationVersionId] = React.useState<string>();
 
   React.useEffect(() => {
-    /* (1/3) */ const pattern = EnhancedRegExp.applicationRoute<{ applicationVersionId: string; path: string }>(
-      '/:applicationVersionId(?<path>/[^#/?]+)'
-    );
+    /* (1/3) */ const pattern = EnhancedRegExp.getApplicationRoutePattern<{
+      applicationVersionId: string;
+      path: string;
+    }>('/:applicationVersionId(?<path>/[^#/?]+)');
 
-    /* (2/3) */ const { applicationVersionId } = pattern.groups(location.toString());
+    /* (2/3) */ const { applicationVersionId } = pattern.getGroups(location.toString());
 
     /* (3/3) */ updateApplicationVersionId(applicationVersionId);
 
