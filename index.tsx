@@ -7,7 +7,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 function TicTacToe() {
-  return <div>TicTacToe</div>;
+  return (
+    <div p="4" textAlign="center">
+      TicTacToe
+    </div>
+  );
 }
 
 if (typeof window !== 'undefined') {
