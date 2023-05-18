@@ -14,7 +14,7 @@ function TicTacToe() {
   return (
     <div p="4" textAlign="center">
       <div>TicTacToe</div>
-      <div cursor="pointer" onClick={() => window.intercom.sendMessage('"Message from TicTacToe"')}>
+      <div cursor="pointer" onClick={() => window.intercom.sendMessage?.('"Message from TicTacToe"')}>
         Send a WebSocket message
       </div>
     </div>
